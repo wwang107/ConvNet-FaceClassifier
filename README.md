@@ -1,6 +1,11 @@
 # Introduction
 This is a Convolutional Neural Network that is able to run on laptop. You can train yourself dataset as long as you define your dataset using ```{'images':[image_1, image_2,...,image_n], 'labels': [label_1,label_2,...,label_n]```. It is wriiten in Pytorch, and thus it is easy to modified as your need. For more detail in the model ```ConvNet.py```
 
+# ConvNet Architecture
+The model has the following simple architecture:
+```conv1->ReLu->pool->conv2->ReLu->FC1->Relu->FC2->ReLu```
+It is shallow, so you should be able to run on both GPU and CPU.
+
 # Dataset
 For demostraction I use [```ORL_faces_dataset```](https://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html), which look like below
 
